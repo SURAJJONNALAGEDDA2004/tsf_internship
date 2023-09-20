@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Needs Bank</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="ico icons/Screenshot (115).ico">
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul class="box">
+            <section class="logo"><img src="images/bank logo.png"></section>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#customer-list">Customers</a></li>
+            <li><a href="#transfer-form">Transaction</a></li>
+            <li><a href="#transfer-history">History</a></li>
+        </ul>
+    </nav>
+
+    <section class="home" id="home">
+        <div class="house">
+            <div class="hometext">
+                <span>Welcome to </span>
+                <h1 class="colo">Needs Bank </h1>
+                <h2>Your Security is our NO.1 priority...<br>
+                'Start Banking'</h2>
+            </div>
+            <div class="thumbnail"><img src="images/download.jpeg">
+            </div>
+        </div>
+        <div class="ba">
+            <a href="#customer-list" class="swig">Our Customers</a>
+            <a href="#transfer-form" class="swig">Make transaction</a>
+        </div>
+    </section>
+    
+    <section class="customer-list" id="customer-list">
+    <!-- Customer List -->
+    <h1>Customer List</h1>
+    <ul id="customer-list"></ul>
+    </section>
+
+    <section class="transfer-form" id="transfer-form">
+    <!-- Transfer Form -->
+    <h2>Transfer Money</h2>
+    <form id="transfer-form">
+        <label for="sender">Sender:</label>
+        <select id="sender" required></select><br>
+        <label for="receiver">Receiver:</label>
+        <select id="receiver" required></select><br>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" required><br>
+        <button type="submit">Transfer</button>
+    </form>
+    </section>
+
+    <section class="transfer-history" id="transfer-history">
+        <!-- Transfer History -->
+    <h2>Transfer History</h2>
+    <ul id="transfer-history"></ul>
+    </section>
+    
+    <section class="contact" id="contact">
+        <div class="data">
+            <p>Privacy Policy</p>
+            <p>Terms of Use</p>
+            <p>Contact us</p>
+            <P>This is a dummy website created for my internship</P>
+            <p>Not a Real banking website</p>
+            <i class="fa-regular fa-copyright"></i><h>2023 SPARKS FOUNDATION</h>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
